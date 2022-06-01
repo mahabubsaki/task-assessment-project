@@ -10,7 +10,7 @@ const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
         const getServices = async () => {
-            const { data } = await axios.get('http://localhost:5000/services')
+            const { data } = await axios.get('https://calm-beach-60014.herokuapp.com/services')
             setServices(data)
             setLoading(false)
         }

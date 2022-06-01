@@ -8,7 +8,7 @@ const Doctors = () => {
     const [patients, setPatients] = useState([])
     useEffect(() => {
         const getPatients = async () => {
-            const { data } = await axios.get('http://localhost:5000/patients')
+            const { data } = await axios.get('https://calm-beach-60014.herokuapp.com/patients')
             setPatients(data)
             setLoading(false)
         }

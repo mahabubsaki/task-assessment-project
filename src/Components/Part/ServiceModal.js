@@ -17,8 +17,8 @@ const ServiceModal = ({ serviceModal, setServiceModal }) => {
                     <h3 class="text-xl font-bold">{serviceName}</h3>
                     <h3 class="text-lg font-bold">Cost : ${cost}</h3>
                     <form onSubmit={handleAppoint}>
-                        <select class="select select-bordered w-full" name="doctor" defaultValue="none" required>
-                            <option disabled value="none">Select Your Preferred Doctor?</option>
+                        <select class="select select-bordered w-full" name="doctor" defaultValue="" required>
+                            <option disabled value="">Select Your Preferred Doctor?</option>
                             <option value="Patricia Reed">Patricia Reed</option>
                             <option value="Waldo Howe">Waldo Howe</option>
                             <option value="Nicole Maxwel">Nicole Maxwell</option>
