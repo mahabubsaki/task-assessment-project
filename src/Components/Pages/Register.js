@@ -41,29 +41,29 @@ const Register = () => {
         return <Loading></Loading>
     }
     return (
-        <div class="flex items-center min-h-[500px] w-full">
-            <div class="w-full bg-white rounded shadow-2xl p-8 m-4 sm:max-w-sm sm:mx-auto">
-                <span class="block w-full text-xl uppercase font-bold mb-4 text-center">Register</span>
-                <form class="mb-4" onSubmit={handleRegister}>
-                    <div class="mb-4 sm:w-full">
-                        <label for="name" class="block text-sm mb-1">Name</label>
-                        <input class="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type="text" name="name" id="name" placeholder="Your Name" required />
+        <div className="flex items-center min-h-[500px] w-full">
+            <div className="w-full bg-white rounded shadow-2xl p-8 m-4 sm:max-w-sm sm:mx-auto">
+                <span className="block w-full text-xl uppercase font-bold mb-4 text-center">Register</span>
+                <form className="mb-4" onSubmit={handleRegister}>
+                    <div className="mb-4 sm:w-full">
+                        <label htmlFor="name" className="block text-sm mb-1">Name</label>
+                        <input className="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type="text" name="name" id="name" placeholder="Your Name" required />
                     </div>
-                    <div class="mb-4 sm:w-full">
-                        <label for="email" class="block text-sm mb-1">Email</label>
-                        <input class="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type="email" name="email" id="email" placeholder="Your Email" required />
+                    <div className="mb-4 sm:w-full">
+                        <label htmlFor="email" className="block text-sm mb-1">Email</label>
+                        <input className="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type="email" name="email" id="email" placeholder="Your Email" required />
                     </div>
-                    <div class="mb-4 sm:w-full relative">
-                        <label for="password" class="block text-sm mb-1">Password</label>
-                        <input class="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type={showPass ? 'password' : 'text'} name="password" id="password" placeholder="Your Password" required />
+                    <div className="mb-4 sm:w-full relative">
+                        <label htmlFor="password" className="block text-sm mb-1">Password</label>
+                        <input className="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type={showPass ? 'password' : 'text'} name="password" id="password" placeholder="Your Password" required />
                         {showPass && <AiFillEye title="Show Password" className="absolute top-9 right-4 text-xl cursor-pointer" onClick={() => setShowPass(!showPass)}></AiFillEye>}
                         {!showPass && <AiFillEyeInvisible title="Hide Password" className="absolute top-9 right-4 text-xl cursor-pointer" onClick={() => setShowPass(!showPass)}></AiFillEyeInvisible>}
                     </div>
-                    <div class="mb-6 sm:w-full">
-                        <label for="confirm" class="block text-sm mb-1">Confirm Password</label>
-                        <input class="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type={showPass ? 'password' : 'text'} name="confirm" id="confirm" placeholder="Confirm Password" required />
+                    <div className="mb-6 sm:w-full">
+                        <label htmlFor="confirm" className="block text-sm mb-1">Confirm Password</label>
+                        <input className="w-full border rounded p-2 outline-none focus:shadow-outline bg-[#eeebeb]" type={showPass ? 'password' : 'text'} name="confirm" id="confirm" placeholder="Confirm Password" required />
                     </div>
-                    <button class="bg-green-500 hover:bg-green-700 text-white uppercase text-sm font-semibold px-4 py-2 rounded" type='submit'>Register</button>
+                    <button className="bg-green-500 hover:bg-green-700 text-white uppercase text-sm font-semibold px-4 py-2 rounded" type='submit'>Register</button>
                 </form>
                 <button className="flex items-center btn btn-info text-md w-full hover:bg-blue-500"><span className="mr-2" onClick={() => signInWithGoogle()}>Continue With Google</span><FcGoogle></FcGoogle></button>
             </div>

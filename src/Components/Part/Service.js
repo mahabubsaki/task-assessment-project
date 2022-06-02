@@ -12,7 +12,7 @@ const Service = ({ service, setServiceModal }) => {
                 <h1 className="my-4 text-xl font-bold">Price : ${cost}</h1>
                 <p className="text-center">{description}</p>
             </div>
-            <label onClick={() => setServiceModal(service)} for="my-modal-3" class="btn btn-success">Appoint Now</label>
+            <label onClick={() => setServiceModal(service)} htmlFor="my-modal-3" className="btn btn-success">Appoint Now</label>
         </div>
     );
 };

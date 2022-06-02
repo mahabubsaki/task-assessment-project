@@ -20,8 +20,8 @@ const Doctors = () => {
     return (
         <div>
             <h1 className="text-center text-2xl text-red-500 my-4">Patients Appointed to Meditech : {patients.length} </h1>
-            <div class="overflow-x-auto">
-                <table class="table table-zebra w-full">
+            <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
                     <thead>
                         <tr>
                             <th>No</th>
